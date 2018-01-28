@@ -1,6 +1,6 @@
 #tooltip {
-    background: #e3e3e3 url(../images/search.png) ;
-    border: 3px solid rgb(219, 14, 219);
+    background: #e3e3e3 url(../images/search.png) no-repeat;
+    border: 3px solid rgb(14, 144, 219);
     float: left;
     font-size: 12px;
     max-width: 120px;
@@ -24,12 +24,37 @@
     color:yellow;
 }
 .margin{
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-left: -70px;
 
 }
 .padding{
     padding-top: 50px;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 100px;
     padding-bottom: 50px;
+}
+.font{
+    font-size: 18px;
+    font-family: 'Comic Sans MS';
+    font-weight: 600;
+
+}
+.arrow{
+    position: relative;
+
+}
+.arrow::before{
+    content: '';
+    position: absolute;
+    top: -32px;;
+    left: 40px;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-bottom: 15px solid rgb(14, 144, 219);
+    margin-right: -15px;
+    margin-top: 15px;
 }

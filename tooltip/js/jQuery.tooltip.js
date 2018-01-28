@@ -10,6 +10,11 @@
             },
             settings = $.extend({}, defaults, options);
 
+
+            
+            
+
+
         this.each(function() {
             var $this = $(this);
             var title = this.title;
@@ -42,6 +47,13 @@
                     if(settings.padding){
                         $('#tooltip').addClass('padding');
                     }
+                    if(settings.font){
+                        $('#tooltip').addClass('font');
+                    }
+                    if(settings.arrow){
+                        $('#tooltip').addClass('arrow');
+                    }
+                    
                 }, function() {
                     // mouse out
                     $('#tooltip').remove();
