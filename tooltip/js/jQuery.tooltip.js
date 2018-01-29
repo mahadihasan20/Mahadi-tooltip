@@ -4,7 +4,7 @@
         var
             defaults = {
                 background: '0080ff',
-                color: '#808080',
+                color: 'red',
                 margin: '50px',
                 rounded: false
             },
@@ -31,7 +31,9 @@
                             backgroundColor: settings.background,
                             color: settings.color,
                             top: e.pageY + 10,
-                            left: e.pageX + 20
+                            left: e.pageX + 20,
+                            triAngle: settings.triAngle
+
                         })
                         .fadeIn(350);
 
@@ -52,12 +54,10 @@
                     if(settings.font){
                         $('#tooltip').addClass('font');
                     }
-                    if(settings.placementBottom){
-                        
-                      
-                        $('#tooltip').addClass('placementBottom margin');
+                    if(settings.placement){
+                        $('#tooltip').addClass(settings.placement + ' leftA');
                     }
-                    if(settings.placementLeft){
+                  /*  if(settings.placementLeft){
                         $('#tooltip').addClass('placementLeft rightMargin');
 
                     }
@@ -68,7 +68,7 @@
                     }
                     if(settings.placementTop){
                         $('#tooltip').addClass('placementTop bottomMargin');
-                    }
+                    }*/
                     /*if(settings.leftMargin){
                         $('#tooltip').addClass('leftMargin');
                     }
