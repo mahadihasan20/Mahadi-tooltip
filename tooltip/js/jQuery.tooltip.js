@@ -3,8 +3,8 @@
 
         var
             defaults = {
-                background: '#e3e3e3',
-                color: 'red',
+                background: '0080ff',
+                color: '#808080',
                 margin: '50px',
                 rounded: false
             },
@@ -41,19 +41,45 @@
                     if(settings.color){
                         $('#tooltip').addClass('color');
                     }
-                    if(settings.margin){
+                    
+                    
+                    /*if(settings.margin){
                         $('#tooltip').addClass('margin');
-                    }
+                    }*/
                     if(settings.padding){
                         $('#tooltip').addClass('padding');
                     }
                     if(settings.font){
                         $('#tooltip').addClass('font');
                     }
-                    if(settings.arrow){
-                        $('#tooltip').addClass('arrow');
+                    if(settings.placementBottom){
+                        
+                      
+                        $('#tooltip').addClass('placementBottom margin');
+                    }
+                    if(settings.placementLeft){
+                        $('#tooltip').addClass('placementLeft rightMargin');
+
+                    }
+
+                   if(settings.placementRight){
+                        $('#tooltip').addClass('placementRight leftMargin');
+
+                    }
+                    if(settings.placementTop){
+                        $('#tooltip').addClass('placementTop bottomMargin');
+                    }
+                    /*if(settings.leftMargin){
+                        $('#tooltip').addClass('leftMargin');
                     }
                     
+                    if(settings.rightMargin){
+                        $('#tooltip').addClass('rightMargin');
+                    }
+                    if(settings.bottomMargin){
+                        $('#tooltip').addClass('bottomMargin');
+                    }
+                    */
                 }, function() {
                     // mouse out
                     $('#tooltip').remove();

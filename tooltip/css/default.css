@@ -1,13 +1,20 @@
 #tooltip {
-    background: #e3e3e3 url(../images/search.png) no-repeat;
-    border: 3px solid rgb(14, 144, 219);
-    float: left;
-    font-size: 12px;
+    background: #0080ff ;
+    border: 3px solid #0080ff;
+    width: 150px;
+    height: 40px;
+    border-radius: 50%;
+    
+    
+    font-size: 15px;
     max-width: 120px;
+    
     padding: 1em 1em 1em 3em;
     position: absolute;
     background-position: left;
-    background-size: contain;
+    background-size: 35px;
+    font-weight: normal;
+    
 
 
 }
@@ -19,7 +26,17 @@
 
 .red{
     color:red;
+    
 }
+.white{
+    color: #fff;
+    
+}
+
+.offWhite{
+    color: #404040;
+}
+
 .yello{
     color:yellow;
 }
@@ -28,8 +45,21 @@
     margin-left: -70px;
 
 }
+.leftMargin{
+    margin-top: -30px;
+    margin-left: 30px;
+}
+.rightMargin{
+    margin-top: -30px;
+    margin-left: -250px;
+}
+
+.bottomMargin{
+    margin-top: -100px;
+    margin-left: -70px;
+}
 .padding{
-    padding-top: 50px;
+    padding-top: 80px;
     padding-left: 50px;
     padding-right: 100px;
     padding-bottom: 50px;
@@ -40,21 +70,84 @@
     font-weight: 600;
 
 }
-.arrow{
+.placementBottom{
     position: relative;
 
 }
-.arrow::before{
+.placementBottom::before{
     content: '';
     position: absolute;
     top: -32px;;
-    left: 40px;
+    left: 68px;
     width: 0;
     height: 0;
     border: 0 solid transparent;
     border-left-width: 15px;
     border-right-width: 15px;
-    border-bottom: 15px solid rgb(14, 144, 219);
+    border-bottom: 15px solid #0080ff;
     margin-right: -15px;
     margin-top: 15px;
+}
+
+.placementLeft{
+    position: relative;
+
+}
+
+.placementLeft::after{
+    
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 8px;
+    border-bottom-width: 8px;
+    border-left: 18px solid #0080ff;
+    margin-right: -15px;
+    margin-top: 15px;
+}
+
+.placementRight{
+    position: relative;
+}
+
+.placementRight::before{
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 10px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 8px;
+    border-bottom-width: 8px;
+    border-right: 18px solid #0080ff;
+    margin-right: -15px;
+    margin-top: 15px;
+}
+
+.placementTop{
+    position: relative;
+
+}
+
+.placementTop::after{
+
+    content: '';
+    position: absolute;
+    left: 65px;
+    top:27px;;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-top: 15px solid #0080ff;
+    margin-right: 0px;
+    margin-top:40px;
+
 }
