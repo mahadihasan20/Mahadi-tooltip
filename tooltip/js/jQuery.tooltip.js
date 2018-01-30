@@ -32,7 +32,8 @@
                             color: settings.color,
                             top: e.pageY + 10,
                             left: e.pageX + 20,
-                            triAngle: settings.triAngle
+                            triAngle: settings.triAngle,
+                            placement: settings.placement
 
                         })
                         .fadeIn(350);
@@ -55,7 +56,23 @@
                         $('#tooltip').addClass('font');
                     }
                     if(settings.placement){
-                        $('#tooltip').addClass(settings.placement + ' leftA');
+                      
+                        if(settings.placement=="bottom"){
+                            $('#tooltip').addClass('bottom bottomA');
+                            
+                        }
+                        if(settings.placement=="left"){
+                            $('#tooltip').addClass('left leftA');
+                        }
+                        if(settings.placement=="right"){
+                            $('#tooltip').addClass('right rightA');
+                        }
+                        if(settings.placement=="top"){
+                            $('#tooltip').addClass('top topA');
+                        }
+
+                      
+                        //$('#tooltip').addClass(settings.placement + 'bottomA');
                     }
                   /*  if(settings.placementLeft){
                         $('#tooltip').addClass('placementLeft rightMargin');

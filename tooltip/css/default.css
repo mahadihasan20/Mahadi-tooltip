@@ -1,8 +1,14 @@
+#container {
+    margin-top: 150px;
+}
+
+
+
 #tooltip {
     background: #0080ff ;
   /*border: 3px solid #dadbdb;*/
-    width: 250px;
-    height: 60px;
+    width: 220px;
+    height: 45px;
     border-radius: 15px;
     font-size: 28px;
     max-width: 500px;
@@ -39,12 +45,12 @@
     color:yellow;
 }
 .top{
-    margin-top: -160px;
-    margin-left: -70px;
+    margin-top: -172px;
+    margin-left: -5px;
 
 }
 .right{
-    margin-top: -47px;
+    margin-top: -60px;
     margin-left: 80px;
 }
 .left{
@@ -53,8 +59,8 @@
 }
 
 .bottom{
-    margin-top: 50px;
-    margin-left: -70px;
+    margin-top: 70px;
+    margin-left: -25px;
 }
 .padding{
     padding-top: 80px;
@@ -75,14 +81,14 @@
 .bottomA::before{
     content: '';
     position: absolute;
-    top: -50px;;
-    left: 68px;
+    top: -70px;;
+    left: 0px;
     width: 0;
     height: 0;
     border: 0 solid transparent;
-    border-left-width: 15px solid #d2d5d8;
-    border-right-width: 15px;
-    border-bottom: 15px solid #ff008c;
+    border-left-width: 40px solid #d2d5d8;
+    border-right-width: 40px;
+    border-bottom: 70px solid #0080ff;
     margin-right: -15px;
     margin-top: 15px;
 }
@@ -96,7 +102,7 @@
     
     content: '';
     position: absolute;
-    left: 354px;
+    left: 325px;
     top: -13px;
     right: 0;
     width: 0;
@@ -118,13 +124,13 @@
     content: '';
     position: absolute;
     left: -61px;
-    top: 50px;
+    top: -13px;
     right: 0;
     width: 0;
     height: 0;
     border: 0 solid transparent;
-    border-top-width: 30px solid #fff;
-    border-bottom-width: 50px;
+    border-top-width: 40px ;
+    border-bottom-width: 30px solid #fff;
     border-right: 70px solid #0080ff;
     margin-right: -15px;
     margin-top: 15px;
@@ -139,14 +145,14 @@
 
     content: '';
     position: absolute;
-    left: 65px;
-    top:27px;;
+    left: 0px;
+    top:47px;;
     width: 0;
     height: 0;
     border: 0 solid transparent;
-    border-left-width: 15px solid #e5e8eb;
-    border-right-width: 15px;
-    border-top: 15px solid #0080ff;
+    border-left-width: 40px solid #e5e8eb;
+    border-right-width: 40px;
+    border-top: 70px solid #0080ff;
     margin-right: 0px;
     margin-top:40px;
 

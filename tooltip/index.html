@@ -11,7 +11,7 @@
 <div id="container">
     <p>
         The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable <a href="#" class="tooltip" title="This is my title">English</a>. Many desktop publishing packages and web
-        page <a href="#">editors</a> now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. <a href="#">Various</a> versions have evolved <a href="#" class="tooltip" title="hello world" >over the years</a>, sometimes by accident, sometimes on purpose (injected humour and the like).
+        page <a href="#">editors</a> now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. <a href="#">Various</a> versions have evolved <a href="#" name="p" class="tooltip" title="hello world" >over the years</a>, sometimes by accident, sometimes on purpose (injected humour and the like).
     </p>
 
     <div id="">
@@ -19,30 +19,106 @@
     </div>
 </div><!--end container-->
 
+<div class="option" id="option">
+    <input type="radio" name="side" value="bottom" id="radio">Bottom</br>
+    <input type="radio" name="side" value="right" id="radio">Right</br>
+    <input type="radio" name="side" value="top" id="radio" >Top</br>
+    <input type="radio" name="side" value="left" id="radio" >Left
+
+
+</div>
+
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jQuery.tooltip.js"></script>
 
 <script type="text/javascript">
 
 
-    $('a.tooltip').tooltip({
+
+
+$('input[name=side]').change( function(){ 
+
+
+
+    var a=$( 'input[name=side]:checked' ).val();
+    console.log(a);
+});
+
+
+ 
+ $('input:radio[name=side]').change( function(){
+
+
+    //  var ch="";
+    //  if(!this.checked && this.value=="")
+    //  ch="bottom";
+    //  else{
+    //      ch=$( 'input[name=side]:checked' ).val();
+    //  }
+
+
+
+//     var checked="";
+//     $(document).ready(function() {
+//   if(!$("input:radio[name='side']").is(":checked")) {
+//       //its checked
+//       checked="bottom";
+//   }
+//   else{
+//       checked=$( 'input[name=side]:checked' ).val();
+//   }
+// })
+
+    // var checked="";
+    // if($("#radio").is("checked")==false){
+    //     checked="bottom";
+    // }
+    // else{
+    //     checked=$( 'input[name=side]:checked' ).val();
+    // }
+
+   $('a.tooltip').tooltip({
         rounded: true,
         color: 'white',
-        //margin: 'margin',
-        //eftMargin: 'leftMargin',
-        
-
-        //bottomMargin: 'bottomMargin',
-        //RightMargin: 'rightMargin',
-
         font: 'font',
         padding: 'padding',
-        placement: 'left '
+        placement: $( 'input[name=side]:checked' ).val()
+                    
+        
+        /*$(document).ready(function(){
+            $( "input[type=radio][name=side]:checked" ).val();
+        })*/
+        
+    })
+                    
+    
+});
+
+
+
+    // $('a.tooltip').tooltip({
+    //     rounded: true,
+    //     color: 'white',
+    //     //margin: 'margin',
+    //     //eftMargin: 'leftMargin',
+        
+
+    //     //bottomMargin: 'bottomMargin',
+    //     //RightMargin: 'rightMargin',
+
+    //     font: 'font',
+    //     padding: 'padding',
+    //     placement: $( 'input[name=side]:checked' ).val()
+        
+    //     /*$(document).ready(function(){
+    //         $( "input[type=radio][name=side]:checked" ).val();
+    //     })*/
         
       
         
         
-    });
+    // });
 
     
 
